@@ -1,0 +1,607 @@
+# Copyright (C) 1991-2004 Altera Corporation
+# Any  megafunction  design,  and related netlist (encrypted  or  decrypted),
+# support information,  device programming or simulation file,  and any other
+# associated  documentation or information  provided by  Altera  or a partner
+# under  Altera's   Megafunction   Partnership   Program  may  be  used  only
+# to program  PLD  devices (but not masked  PLD  devices) from  Altera.   Any
+# other  use  of such  megafunction  design,  netlist,  support  information,
+# device programming or simulation file,  or any other  related documentation
+# or information  is prohibited  for  any  other purpose,  including, but not
+# limited to  modification,  reverse engineering,  de-compiling, or use  with
+# any other  silicon devices,  unless such use is  explicitly  licensed under
+# a separate agreement with  Altera  or a megafunction partner.  Title to the
+# intellectual property,  including patents,  copyrights,  trademarks,  trade
+# secrets,  or maskworks,  embodied in any such megafunction design, netlist,
+# support  information,  device programming or simulation file,  or any other
+# related documentation or information provided by  Altera  or a megafunction
+# partner, remains with Altera, the megafunction partner, or their respective
+# licensors. No other licenses, including any licenses needed under any third
+# party's intellectual property, are provided herein.
+
+
+# The default values for assignments are stored in the file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 2.2
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:09:37  MAY 11, 2004"
+set_global_assignment -name LAST_QUARTUS_VERSION 4.0
+set_global_assignment -name VERILOG_FILE AP600.v
+
+# Pin & Location Assignments
+# ==========================
+set_global_assignment -name RESERVE_PIN "AS INPUT TRI-STATED"
+set_location_assignment PIN_AK6 -to buzzer
+set_location_assignment PIN_T2 -to clk
+set_location_assignment PIN_AR16 -to dipA\[0\]
+set_location_assignment PIN_AP16 -to dipA\[1\]
+set_location_assignment PIN_AN16 -to dipA\[2\]
+set_location_assignment PIN_B32 -to dipA\[3\]
+set_location_assignment PIN_A34 -to dipA\[4\]
+set_location_assignment PIN_T32 -to dipA\[5\]
+set_location_assignment PIN_T31 -to dipA\[6\]
+set_location_assignment PIN_T30 -to dipA\[7\]
+set_location_assignment PIN_R35 -to dipB\[0\]
+set_location_assignment PIN_R33 -to dipB\[1\]
+set_location_assignment PIN_R32 -to dipB\[2\]
+set_location_assignment PIN_R30 -to dipB\[3\]
+set_location_assignment PIN_P35 -to dipB\[4\]
+set_location_assignment PIN_P34 -to dipB\[5\]
+set_location_assignment PIN_P33 -to dipB\[6\]
+set_location_assignment PIN_P30 -to dipB\[7\]
+set_location_assignment PIN_AM15 -to hexA\[0\]
+set_location_assignment PIN_AN15 -to hexA\[1\]
+set_location_assignment PIN_AL16 -to hexA\[2\]
+set_location_assignment PIN_AP14 -to hexA\[3\]
+set_location_assignment PIN_AR14 -to hexB\[0\]
+set_location_assignment PIN_AP15 -to hexB\[1\]
+set_location_assignment PIN_AR15 -to hexB\[2\]
+set_location_assignment PIN_AM16 -to hexB\[3\]
+set_location_assignment PIN_AE4 -to ledA\[0\]
+set_location_assignment PIN_AE5 -to ledA\[1\]
+set_location_assignment PIN_AE6 -to ledA\[2\]
+set_location_assignment PIN_AF1 -to ledA\[3\]
+set_location_assignment PIN_AF2 -to ledA\[4\]
+set_location_assignment PIN_AF3 -to ledA\[5\]
+set_location_assignment PIN_AF4 -to ledA\[6\]
+set_location_assignment PIN_AF5 -to ledA\[7\]
+set_location_assignment PIN_AF6 -to ledB\[0\]
+set_location_assignment PIN_AH1 -to ledB\[1\]
+set_location_assignment PIN_AG2 -to ledB\[2\]
+set_location_assignment PIN_AG3 -to ledB\[3\]
+set_location_assignment PIN_AG4 -to ledB\[4\]
+set_location_assignment PIN_AG5 -to ledB\[5\]
+set_location_assignment PIN_AG6 -to ledB\[6\]
+set_location_assignment PIN_AJ1 -to ledB\[7\]
+set_location_assignment PIN_AH2 -to ledC\[0\]
+set_location_assignment PIN_AK1 -to ledC\[1\]
+set_location_assignment PIN_AH3 -to ledC\[2\]
+set_location_assignment PIN_AH5 -to ledC\[3\]
+set_location_assignment PIN_AH6 -to ledC\[4\]
+set_location_assignment PIN_AJ2 -to ledC\[5\]
+set_location_assignment PIN_AL1 -to ledC\[6\]
+set_location_assignment PIN_AK2 -to ledC\[7\]
+set_location_assignment PIN_AJ3 -to ledD\[0\]
+set_location_assignment PIN_AJ4 -to ledD\[1\]
+set_location_assignment PIN_AJ5 -to ledD\[2\]
+set_location_assignment PIN_AJ6 -to ledD\[3\]
+set_location_assignment PIN_AM1 -to ledD\[4\]
+set_location_assignment PIN_AK3 -to ledD\[5\]
+set_location_assignment PIN_AK4 -to ledD\[6\]
+set_location_assignment PIN_AK5 -to ledD\[7\]
+set_location_assignment PIN_AP22 -to pswA\[0\]
+set_location_assignment PIN_AL20 -to pswA\[1\]
+set_location_assignment PIN_AN21 -to pswA\[2\]
+set_location_assignment PIN_AM21 -to pswA\[3\]
+set_location_assignment PIN_AR23 -to pswA\[4\]
+set_location_assignment PIN_AR24 -to pswB\[0\]
+set_location_assignment PIN_AP23 -to pswB\[1\]
+set_location_assignment PIN_AN22 -to pswB\[2\]
+set_location_assignment PIN_AL21 -to pswB\[3\]
+set_location_assignment PIN_AR25 -to pswB\[4\]
+set_location_assignment PIN_AM22 -to pswC\[0\]
+set_location_assignment PIN_AP24 -to pswC\[1\]
+set_location_assignment PIN_AN23 -to pswC\[2\]
+set_location_assignment PIN_AR26 -to pswC\[3\]
+set_location_assignment PIN_AL22 -to pswC\[4\]
+set_location_assignment PIN_AP25 -to pswD\[0\]
+set_location_assignment PIN_AN24 -to pswD\[1\]
+set_location_assignment PIN_AM23 -to pswD\[2\]
+set_location_assignment PIN_AL23 -to pswD\[3\]
+set_location_assignment PIN_AR27 -to pswD\[4\]
+set_location_assignment PIN_T6 -to reset
+set_location_assignment PIN_P5 -to segA\[0\]
+set_location_assignment PIN_P4 -to segA\[1\]
+set_location_assignment PIN_P3 -to segA\[2\]
+set_location_assignment PIN_P2 -to segA\[3\]
+set_location_assignment PIN_P1 -to segA\[4\]
+set_location_assignment PIN_R6 -to segA\[5\]
+set_location_assignment PIN_R2 -to segA\[6\]
+set_location_assignment PIN_R1 -to segA\[7\]
+set_location_assignment PIN_W5 -to segB\[0\]
+set_location_assignment PIN_Y6 -to segB\[1\]
+set_location_assignment PIN_AA2 -to segB\[2\]
+set_location_assignment PIN_AA3 -to segB\[3\]
+set_location_assignment PIN_AA5 -to segB\[4\]
+set_location_assignment PIN_AA6 -to segB\[5\]
+set_location_assignment PIN_AA1 -to segB\[6\]
+set_location_assignment PIN_AB2 -to segB\[7\]
+set_location_assignment PIN_AB3 -to segC\[0\]
+set_location_assignment PIN_AB4 -to segC\[1\]
+set_location_assignment PIN_AB5 -to segC\[2\]
+set_location_assignment PIN_AB1 -to segC\[3\]
+set_location_assignment PIN_AC1 -to segC\[4\]
+set_location_assignment PIN_AC2 -to segC\[5\]
+set_location_assignment PIN_AC4 -to segC\[6\]
+set_location_assignment PIN_AC5 -to segC\[7\]
+set_location_assignment PIN_AD1 -to segD\[0\]
+set_location_assignment PIN_AD2 -to segD\[1\]
+set_location_assignment PIN_AD3 -to segD\[2\]
+set_location_assignment PIN_AD4 -to segD\[3\]
+set_location_assignment PIN_AD5 -to segD\[4\]
+set_location_assignment PIN_AD6 -to segD\[5\]
+set_location_assignment PIN_AE1 -to segD\[6\]
+set_location_assignment PIN_AE3 -to segD\[7\]
+set_location_assignment PIN_AL11 -to segE\[0\]
+set_location_assignment PIN_AN9 -to segE\[1\]
+set_location_assignment PIN_AM10 -to segE\[2\]
+set_location_assignment PIN_AR6 -to segE\[3\]
+set_location_assignment PIN_AP7 -to segE\[4\]
+set_location_assignment PIN_AN8 -to segE\[5\]
+set_location_assignment PIN_AL10 -to segE\[6\]
+set_location_assignment PIN_AM9 -to segE\[7\]
+set_location_assignment PIN_AN13 -to segF\[0\]
+set_location_assignment PIN_AR10 -to segF\[1\]
+set_location_assignment PIN_AL14 -to segF\[2\]
+set_location_assignment PIN_AP11 -to segF\[3\]
+set_location_assignment PIN_AN12 -to segF\[4\]
+set_location_assignment PIN_AM13 -to segF\[5\]
+set_location_assignment PIN_AL13 -to segF\[6\]
+set_location_assignment PIN_AR9 -to segF\[7\]
+set_location_assignment PIN_E28 -to segG\[0\]
+set_location_assignment PIN_D29 -to segG\[1\]
+set_location_assignment PIN_C30 -to segG\[2\]
+set_location_assignment PIN_A33 -to segG\[3\]
+set_location_assignment PIN_B31 -to segG\[4\]
+set_location_assignment PIN_E27 -to segG\[5\]
+set_location_assignment PIN_A32 -to segG\[6\]
+set_location_assignment PIN_D28 -to segG\[7\]
+set_location_assignment PIN_D26 -to segH\[0\]
+set_location_assignment PIN_C27 -to segH\[1\]
+set_location_assignment PIN_E25 -to segH\[2\]
+set_location_assignment PIN_B28 -to segH\[3\]
+set_location_assignment PIN_A29 -to segH\[4\]
+set_location_assignment PIN_D25 -to segH\[5\]
+set_location_assignment PIN_C26 -to segH\[6\]
+set_location_assignment PIN_B27 -to segH\[7\]
+
+# Timing Assignments
+# ==================
+set_global_assignment -name INCLUDE_EXTERNAL_PIN_DELAYS_IN_FMAX_CALCULATIONS OFF
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name APEX20K_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name STRATIX_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name CYCLONE_OPTIMIZATION_TECHNIQUE AREA
+set_global_assignment -name FAMILY APEX20KE
+set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "<None>"
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT ANY
+set_global_assignment -name DEVICE_FILTER_PACKAGE ANY
+set_global_assignment -name TOP_LEVEL_ENTITY AP600
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name AUTO_RESTART_CONFIGURATION OFF
+set_global_assignment -name CYCLONE_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name DEVICE "EP20K600EBC652-1X"
+set_instance_assignment -name IO_STANDARD LVTTL -to buzzer
+set_instance_assignment -name IO_STANDARD LVTTL -to clk
+set_instance_assignment -name IO_STANDARD LVTTL -to dipA\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipA\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipA\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipA\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipA\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipA\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipA\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipA\[7\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipB\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipB\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipB\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipB\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipB\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipB\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipB\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to dipB\[7\]
+set_instance_assignment -name IO_STANDARD LVTTL -to hexA\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to hexA\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to hexA\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to hexA\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to hexB\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to hexB\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to hexB\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to hexB\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledA\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledA\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledA\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledA\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledA\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledA\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledA\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledA\[7\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledB\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledB\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledB\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledB\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledB\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledB\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledB\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledB\[7\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledC\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledC\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledC\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledC\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledC\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledC\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledC\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledC\[7\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledD\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledD\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledD\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledD\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledD\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledD\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledD\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to ledD\[7\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswA\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswA\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswA\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswA\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswA\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswB\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswB\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswB\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswB\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswB\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswC\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswC\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswC\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswC\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswC\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswD\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswD\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswD\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswD\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to pswD\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to reset
+set_instance_assignment -name IO_STANDARD LVTTL -to segA\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segA\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segA\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segA\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segA\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segA\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segA\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segA\[7\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segB\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segB\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segB\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segB\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segB\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segB\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segB\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segB\[7\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segC\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segC\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segC\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segC\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segC\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segC\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segC\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segC\[7\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segD\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segD\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segD\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segD\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segD\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segD\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segD\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segD\[7\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segE\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segE\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segE\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segE\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segE\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segE\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segE\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segE\[7\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segF\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segF\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segF\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segF\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segF\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segF\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segF\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segF\[7\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segG\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segG\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segG\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segG\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segG\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segG\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segG\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segG\[7\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segH\[0\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segH\[1\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segH\[2\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segH\[3\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segH\[4\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segH\[5\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segH\[6\]
+set_instance_assignment -name IO_STANDARD LVTTL -to segH\[7\]
+
+# Timing Analysis Assignments
+# ===========================
+set_global_assignment -name MAX_SCC_SIZE 50
+set_global_assignment -name RUN_ALL_TIMING_ANALYSES OFF
+set_global_assignment -name RUN_TIMING_ANALYSES ON
+
+# EDA Netlist Writer Assignments
+# ==============================
+set_global_assignment -name EDA_RESYNTHESIS_TOOL "<None>"
+set_global_assignment -name EDA_FORMAL_VERIFICATION_TOOL "<None>"
+set_global_assignment -name EDA_BOARD_DESIGN_TOOL "<None>"
+set_global_assignment -name EDA_TIMING_ANALYSIS_TOOL "<None>"
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+
+# Assembler Assignments
+# =====================
+set_global_assignment -name STRATIX_CONFIGURATION_DEVICE EPC2
+set_global_assignment -name CYCLONE_CONFIGURATION_DEVICE EPC2
+set_global_assignment -name FLEX10K_CONFIGURATION_DEVICE EPC2
+set_global_assignment -name FLEX6K_CONFIGURATION_DEVICE EPC1
+set_global_assignment -name MERCURY_CONFIGURATION_DEVICE EPC2
+set_global_assignment -name EXCALIBUR_CONFIGURATION_DEVICE EPC2
+set_global_assignment -name APEX20K_CONFIGURATION_DEVICE EPC2
+
+# Design Assistant Assignments
+# ============================
+set_global_assignment -name HCPY_ALOAD_SIGNALS OFF
+set_global_assignment -name HCPY_VREF_PINS OFF
+set_global_assignment -name HCPY_CAT OFF
+set_global_assignment -name ACLK_RULE_IMSZER_ADOMAIN OFF
+set_global_assignment -name ACLK_RULE_SZER_BTW_ACLK_DOMAIN OFF
+set_global_assignment -name ACLK_RULE_NO_SZER_ACLK_DOMAIN OFF
+set_global_assignment -name ACLK_CAT OFF
+set_global_assignment -name SIGNALRACE_RULE_ASYNCHPIN_SYNCH_CLKPIN OFF
+set_global_assignment -name SIGNALRACE_CAT OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_LATCH_UNIDENTIFIED OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_SRLATCH OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_MULTI_VIBRATOR OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_ILLEGAL_PULSE_GEN OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_RIPPLE_CLK OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_DELAY_CHAIN OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_REG_LOOP OFF
+set_global_assignment -name NONSYNCHSTRUCT_RULE_COMBLOOP OFF
+set_global_assignment -name NONSYNCHSTRUCT_CAT OFF
+set_global_assignment -name TIMING_RULE_COIN_CLKEDGE OFF
+set_global_assignment -name TIMING_RULE_SHIFT_REG OFF
+set_global_assignment -name TIMING_CAT OFF
+set_global_assignment -name RESET_RULE_IMSYNCH_ASYNCH_DOMAIN OFF
+set_global_assignment -name RESET_RULE_UNSYNCH_ASYNCH_DOMAIN OFF
+set_global_assignment -name RESET_RULE_COMB_ASYNCH_RESET OFF
+set_global_assignment -name RESET_RULE_IMSYNCH_EXRESET OFF
+set_global_assignment -name RESET_RULE_UNSYNCH_EXRESET OFF
+set_global_assignment -name RESET_RULE_INPINS_RESETNET OFF
+set_global_assignment -name RESET_CAT OFF
+set_global_assignment -name CLK_RULE_MIX_EDGES OFF
+set_global_assignment -name CLK_RULE_CLKNET_CLKSPINES OFF
+set_global_assignment -name CLK_RULE_INPINS_CLKNET OFF
+set_global_assignment -name CLK_RULE_GATING_SCHEME OFF
+set_global_assignment -name CLK_RULE_INV_CLOCK OFF
+set_global_assignment -name CLK_RULE_COMB_CLOCK OFF
+set_global_assignment -name CLK_CAT OFF
+set_global_assignment -name DRC_REPORT_FANOUT_EXCEEDING OFF
+set_global_assignment -name DRC_REPORT_TOP_FANOUT OFF
+
+# SignalProbe Assignments
+# =======================
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to buzzer
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to clk
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipA\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipA\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipA\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipA\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipA\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipA\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipA\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipA\[7\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipB\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipB\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipB\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipB\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipB\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipB\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipB\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to dipB\[7\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to hexA\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to hexA\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to hexA\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to hexA\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to hexB\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to hexB\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to hexB\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to hexB\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledA\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledA\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledA\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledA\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledA\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledA\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledA\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledA\[7\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledB\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledB\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledB\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledB\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledB\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledB\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledB\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledB\[7\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledC\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledC\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledC\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledC\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledC\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledC\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledC\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledC\[7\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledD\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledD\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledD\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledD\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledD\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledD\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledD\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to ledD\[7\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswA\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswA\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswA\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswA\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswA\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswB\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswB\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswB\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswB\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswB\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswC\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswC\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswC\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswC\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswC\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswD\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswD\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswD\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswD\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to pswD\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to reset
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segA\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segA\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segA\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segA\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segA\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segA\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segA\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segA\[7\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segB\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segB\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segB\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segB\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segB\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segB\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segB\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segB\[7\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segC\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segC\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segC\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segC\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segC\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segC\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segC\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segC\[7\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segD\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segD\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segD\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segD\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segD\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segD\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segD\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segD\[7\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segE\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segE\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segE\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segE\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segE\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segE\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segE\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segE\[7\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segF\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segF\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segF\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segF\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segF\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segF\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segF\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segF\[7\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segG\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segG\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segG\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segG\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segG\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segG\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segG\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segG\[7\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segH\[0\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segH\[1\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segH\[2\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segH\[3\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segH\[4\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segH\[5\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segH\[6\]
+set_instance_assignment -name SIGNALPROBE_ENABLE OFF -to segH\[7\]
+
+# -----------------------------------------
+# start EDA_TOOL_SETTINGS(eda_board_design)
+
+	# EDA Netlist Writer Assignments
+	# ==============================
+	set_global_assignment -name EDA_GENERATE_SDF_OUTPUT_FILE ON -section_id eda_board_design
+
+# end EDA_TOOL_SETTINGS(eda_board_design)
+# ---------------------------------------
+
+# ------------------------------------------------
+# start EDA_TOOL_SETTINGS(eda_formal_verification)
+
+	# EDA Netlist Writer Assignments
+	# ==============================
+	set_global_assignment -name EDA_GENERATE_SDF_OUTPUT_FILE ON -section_id eda_formal_verification
+
+# end EDA_TOOL_SETTINGS(eda_formal_verification)
+# ----------------------------------------------
+
+# -----------------------------------
+# start EDA_TOOL_SETTINGS(eda_palace)
+
+	# EDA Netlist Writer Assignments
+	# ==============================
+	set_global_assignment -name EDA_GENERATE_SDF_OUTPUT_FILE ON -section_id eda_palace
+
+# end EDA_TOOL_SETTINGS(eda_palace)
+# ---------------------------------
+
+# ---------------------------------------
+# start EDA_TOOL_SETTINGS(eda_simulation)
+
+	# EDA Netlist Writer Assignments
+	# ==============================
+	set_global_assignment -name EDA_GENERATE_SDF_OUTPUT_FILE ON -section_id eda_simulation
+
+# end EDA_TOOL_SETTINGS(eda_simulation)
+# -------------------------------------
+
+# --------------------------------------------
+# start EDA_TOOL_SETTINGS(eda_timing_analysis)
+
+	# EDA Netlist Writer Assignments
+	# ==============================
+	set_global_assignment -name EDA_GENERATE_SDF_OUTPUT_FILE ON -section_id eda_timing_analysis
+
+# end EDA_TOOL_SETTINGS(eda_timing_analysis)
+# ------------------------------------------

@@ -1,0 +1,6 @@
+iverilog -o ./AP600.out ./AP600.v ./t_AP600.v
+vvp -n ./AP600.out
+
+
+iverilog -o ./a.out ./a.v ./t_AP600.v
+vvp -n ./a.out
